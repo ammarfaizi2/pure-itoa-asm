@@ -40,7 +40,8 @@ rnd:
 pgg:
 	mov r8,r15
 	mov rax,r8
-	mov r9,10
+	mov r9,7
+	xor rdx,rdx
 	idiv r9
 	ret
 
