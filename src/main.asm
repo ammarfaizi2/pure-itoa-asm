@@ -11,7 +11,6 @@ _start:
 	mov rax,60
 	xor rdi,rdi
 	syscall
-
 itoa:
 	mov r14,1
 	mov rbx,rax
@@ -20,7 +19,6 @@ itoa:
 	mov [z11],r8
 	call rnd
 	ret
-
 rnd:
 	call pz11
 	call pbl
@@ -32,7 +30,6 @@ rnd:
 	cmp r15,10
 	jl pll
 	ret
-
 pgg:
 	mov r8,r15
 	mov rax,r8
@@ -47,7 +44,6 @@ pgg:
 	cmp r15,rbx
 	jne rnd
 	ret
-
 pgg2:
 	mov r8,r15
 	mov rax,r8
@@ -87,7 +83,6 @@ epgg:
 	cmp r15,rbx
 	jng rnd
 	ret
-
 pll:
 	mov r8,r15
 	add r8,48
@@ -95,7 +90,6 @@ pll:
 	cmp r15,rbx
 	jne rnd
 	ret
-
 pz11:
 	mov rax,1
 	mov rdi,1
@@ -103,7 +97,6 @@ pz11:
 	mov rdx,r14
 	syscall
 	ret
-
 pbl:
 	mov rax,1
 	mov rdi,1
